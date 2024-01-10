@@ -39,7 +39,7 @@ const DropdownDesktop = () => {
               <li
                 onClick={() => setToggle(!toggle)}
                 key={link.key}
-                className="text-xl font-bold  pb-8 text-white hover:text-gold"
+                className="text-xl font-bold  pb-8 text-white hover:text-gold transition-all duration-500 ease-in-out"
               >
                 <Link
                   href={link.href}
@@ -54,33 +54,41 @@ const DropdownDesktop = () => {
           <div className="flex items-center space-x-2 mt-10 overflow-hidden">
             <div>
               {" "}
-              <Image
-                src="/watch1.png"
-                height={361}
-                width={421}
-                alt="image montre"
-              />
+              <div className="overflow-hidden cursor-pointer ">
+                <Image
+                  src="/watch1.png"
+                  height={361}
+                  width={421}
+                  alt="image montre"
+                  className=" scale-100  hover:scale-125 transition-transform duration-500 ease-in-out"
+                />
+              </div>
               <p className="text-white mt-5 font-semibold">GMT-Master II</p>
             </div>
             <div>
               {" "}
-              <Image
-                src="/watch2.png"
-                height={361}
-                width={421}
-                alt="image montre"
-                className=" scale-100 hover:-translate-y-1 hover:scale-150 overflow-hidden "
-              />
+              <div className="overflow-hidden cursor-pointer ">
+                <Image
+                  src="/watch2.png"
+                  height={361}
+                  width={421}
+                  alt="image montre"
+                  className=" scale-100  hover:scale-125 transition-transform duration-500 ease-in-out"
+                />
+              </div>
               <p className="text-white mt-5 font-semibold">GMT-Master II</p>
             </div>
             <div>
               {" "}
-              <Image
-                src="/watch3.png"
-                height={361}
-                width={421}
-                alt="image montre"
-              />
+              <div className="overflow-hidden cursor-pointer ">
+                <Image
+                  src="/watch3.png"
+                  height={361}
+                  width={421}
+                  alt="image montre"
+                  className=" scale-100  hover:scale-125 transition-transform duration-500 ease-in-out"
+                />
+              </div>
               <p className="text-white mt-5 font-semibold">GMT-Master II</p>
             </div>
           </div>
