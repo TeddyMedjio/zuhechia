@@ -1,27 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Marcellus&display=swap");
+
+body {
+  font-family: "Marcellus", serif;
+  font-family: "Inter", sans-serif;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+::selection {
+  color: black;
+  background: #c4ab7c;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+html {
+  scroll-behavior: smooth;
+}
+
+.parallax-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.parallax-item h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.parallax-item:first-child {
+  background: url("https://images.unsplash.com/photo-1663305411753-4c305e177ff3?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5NDA4ODE&ixlib=rb-1.2.1&q=80");
+  background-size: cover;
+}
+
+.parallax-item:nth-child(2) {
+  background: #fdd835;
+}
+
+.parallax-item:nth-child(3) {
+  background: url("https://images.unsplash.com/photo-1663183539627-adbe2c8ef43d?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM5Mzk5ODc&ixlib=rb-1.2.1&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Parallax Effect for DIV 3 */
+  min-height: 600px;
+}
+
+.parallax-item:nth-child(4) {
+  background: #1565c0;
+}
+
+@media screen and (max-width: 768px) {
+  .parallax-item h2 {
+    font-size: 1.5rem;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
