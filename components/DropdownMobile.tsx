@@ -36,7 +36,7 @@ const DropdownMobile = () => {
             : "-translate-y-[1500px] md:opacity-100 opacity-0 "
         }`}
       >
-        <ul className="mt-20 ml-10 flex flex-col -z-50">
+        <ul className="mt-20 ml-5 flex flex-col -z-50">
           {NAV_LINKS.map((link) => (
             <li
               onClick={() => setToggle(!toggle)}
@@ -53,6 +53,16 @@ const DropdownMobile = () => {
             </li>
           ))}
         </ul>
+        <span className="flex items-center space-x-3 cursor-pointer ml-5 mt-20">
+          <Image
+            src="/world.svg"
+            height={20}
+            width={20}
+            alt="image montre"
+            className=" scale-100  hover:scale-125 transition-transform duration-500 ease-in-out"
+          />
+          <p className="text-sm font-semibold text-white">Français</p>
+        </span>
       </div>
     </div>
   );

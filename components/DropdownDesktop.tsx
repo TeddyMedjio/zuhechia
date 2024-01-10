@@ -33,24 +33,36 @@ const DropdownDesktop = () => {
             : "-translate-y-[1500px] md:opacity-100 opacity-0 "
         }`}
       >
-        <div className="container mx-auto mt-32">
-          <ul className="flex  items-center -z-50 space-x-5 lg:space-x-10">
-            {NAV_LINKS.map((link) => (
-              <li
-                onClick={() => setToggle(!toggle)}
-                key={link.key}
-                className="text-xl font-bold  pb-8 text-white hover:text-gold transition-all duration-500 ease-in-out"
-              >
-                <Link
-                  href={link.href}
+        <div className="container mx-auto mt-32 ">
+          <div className="flex items-start justify-between">
+            <ul className="flex  items-center -z-50 space-x-5 lg:space-x-10">
+              {NAV_LINKS.map((link) => (
+                <li
+                  onClick={() => setToggle(!toggle)}
                   key={link.key}
-                  className={`link ${pathname === `${link.href}`}`}
+                  className="text-xl font-bold  pb-8 text-white hover:text-gold transition-all duration-500 ease-in-out"
                 >
-                  <span>{link.label}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+                  <Link
+                    href={link.href}
+                    key={link.key}
+                    className={`link ${pathname === `${link.href}`}`}
+                  >
+                    <span>{link.label}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <span className="lg:flex items-center space-x-3 cursor-pointer hidden mt-2">
+              <Image
+                src="/world.svg"
+                height={20}
+                width={20}
+                alt="image montre"
+                className=" scale-100  hover:scale-125 transition-transform duration-500 ease-in-out"
+              />
+              <p className="text-sm font-semibold text-white">Français</p>
+            </span>
+          </div>
           <div className="flex items-center space-x-2 mt-10 overflow-hidden">
             <div>
               {" "}
