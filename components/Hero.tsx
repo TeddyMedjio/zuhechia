@@ -4,7 +4,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <>
+    <div className="overflow-hidden">
       <section className="relative h-screen">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col space-y-5 justify-center items-center w-full z-30">
           <h3 className="uppercase text-xl md:text-2xl text-white">
@@ -76,10 +76,10 @@ const Hero = () => {
       </section>
       <section className="h-screen w-full bg-center bg-cover flex flex-col space-y-5 justify-center items-center bg-heroTwo bg-fixed">
         <h3 className="uppercase text-xl md:text-2xl text-white">
-          Le choix de sa vie
+          Le choix de la vie
         </h3>
         <h1 className="font-heading text-6xl md:text-8xl text-white text-center">
-          Acheter Zuhe Chia
+          Zuhe Chia
         </h1>
         <Link
           href="#"
@@ -97,7 +97,7 @@ const Hero = () => {
           </span>
         </Link>
       </section>
-    </>
+    </div>
   );
 };
 
