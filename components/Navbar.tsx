@@ -48,7 +48,7 @@ const Navbar = () => {
             height={30}
             width={34}
             alt="logo zuhe chia"
-            className="md:hidden"
+            className=" md:hidden"
           />
         </Link>
 

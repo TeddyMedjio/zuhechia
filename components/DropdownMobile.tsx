@@ -10,7 +10,7 @@ const DropdownMobile = () => {
   const [toggle, setToggle] = useState(false);
   const pathname = usePathname();
   return (
-    <div className="w-5 md:hidden">
+    <div className="w-20 md:hidden">
       <div>
         {toggle ? (
           <span
