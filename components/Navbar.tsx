@@ -54,10 +54,10 @@ const Navbar = () => {
 
         <div className="flex items-center space-x-4">
           <Link href="#">
-            <Image src="/search.svg" height={30} width={30} alt="search" />
+            <Image src="/search.svg" height={24} width={24} alt="search" />
           </Link>
           <Link href="#">
-            <Image src="/profil.svg" height={30} width={30} alt="profil icon" />
+            <Image src="/profil.svg" height={24} width={24} alt="profil icon" />
           </Link>
           <Link href="#" className="relative">
             <span className="">
@@ -65,7 +65,7 @@ const Navbar = () => {
                 0
               </p>
             </span>
-            <Image src="/basket.svg" height={30} width={30} alt="basket icon" />
+            <Image src="/basket.svg" height={24} width={24} alt="basket icon" />
           </Link>
         </div>
       </div>

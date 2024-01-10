@@ -72,7 +72,7 @@ const DropdownDesktop = () => {
                   height={361}
                   width={421}
                   alt="image montre"
-                  className=" scale-100  hover:scale-125 transition-transform duration-500 ease-in-out"
+                  className=" scale-100  hover:scale-125 transition-transform duration-300 ease-in-out"
                 />
               </div>
               <p className="text-white mt-5 font-semibold">GMT-Master II</p>
@@ -85,7 +85,7 @@ const DropdownDesktop = () => {
                   height={361}
                   width={421}
                   alt="image montre"
-                  className=" scale-100  hover:scale-125 transition-transform duration-500 ease-in-out"
+                  className=" scale-100  hover:scale-125 transition-transform duration-300 ease-in-out"
                 />
               </div>
               <p className="text-white mt-5 font-semibold">GMT-Master II</p>
@@ -98,7 +98,7 @@ const DropdownDesktop = () => {
                   height={361}
                   width={421}
                   alt="image montre"
-                  className=" scale-100  hover:scale-125 transition-transform duration-500 ease-in-out"
+                  className=" scale-100  hover:scale-125 transition-transform duration-300 ease-in-out"
                 />
               </div>
               <p className="text-white mt-5 font-semibold">GMT-Master II</p>
