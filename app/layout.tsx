@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -57,6 +58,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         <main className="antiakiased bg-black">{children}</main>
+        <Footer />
       </body>
     </html>
   );
