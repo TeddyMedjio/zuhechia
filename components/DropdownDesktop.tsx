@@ -35,32 +35,31 @@ const DropdownDesktop = () => {
       >
         <div className="container mx-auto mt-32 ">
           <div className="flex items-start justify-between">
-            <ul className="flex  items-center -z-50 space-x-5 lg:space-x-10">
+            <ul className="flex items-center space-x-5 lg:space-x-10">
               {NAV_LINKS.map((link) => (
                 <li
                   onClick={() => setToggle(!toggle)}
                   key={link.key}
-                  className="text-xl font-bold  pb-8 text-white hover:text-gold transition-all duration-500 ease-in-out"
+                  className="text-xl font-medium text-white hover:text-gold hover:underline transition-all duration-300 ease-in-out "
                 >
                   <Link
                     href={link.href}
                     key={link.key}
                     className={`link ${pathname === `${link.href}`}`}
                   >
-                    <span>{link.label}</span>
+                    {link.label}
                   </Link>
                 </li>
               ))}
             </ul>
-            <span className="lg:flex items-center space-x-3 cursor-pointer hidden mt-2">
+            <span className="lg:flex items-center space-x-3 justify-center cursor-pointer hidden">
               <Image
                 src="/world.svg"
                 height={20}
                 width={20}
                 alt="image montre"
-                className=" scale-100  hover:scale-125 transition-transform duration-500 ease-in-out"
               />
-              <p className="text-sm font-semibold text-white">Français</p>
+              <p className="text-sm font-semibold text-white">Anglais</p>
             </span>
           </div>
           <div className="flex items-center space-x-2 mt-10 overflow-hidden">
@@ -75,7 +74,7 @@ const DropdownDesktop = () => {
                   className=" scale-100  hover:scale-125 transition-transform duration-300 ease-in-out"
                 />
               </div>
-              <p className="text-white mt-5 font-semibold">GMT-Master II</p>
+              <p className="text-white mt-5 font-semibold">GMT-Master I</p>
             </div>
             <div>
               {" "}
@@ -101,7 +100,7 @@ const DropdownDesktop = () => {
                   className=" scale-100  hover:scale-125 transition-transform duration-300 ease-in-out"
                 />
               </div>
-              <p className="text-white mt-5 font-semibold">GMT-Master II</p>
+              <p className="text-white mt-5 font-semibold">GMT-Master III</p>
             </div>
           </div>
         </div>

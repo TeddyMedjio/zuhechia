@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: {
@@ -53,7 +54,10 @@ export default function RootLayout({
 
       <meta name="twitter:author" content="@zuhechia" />
       <meta name="twitter:site" content="@zuhechia" />
-      <body className="antiakiased">{children}</body>
+      <body>
+        <Navbar />
+        <main className="antiakiased bg-black">{children}</main>
+      </body>
     </html>
   );
 }

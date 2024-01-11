@@ -17,7 +17,7 @@ const DropdownMobile = () => {
             onClick={() => setToggle((prev) => !prev)}
             className="flex items-center text-white space-x-3 cursor-pointer"
           >
-            <Image src="/close.svg" width={10} height={10} alt="icon menu" />
+            <Image src="/close.svg" width={18} height={18} alt="icon menu" />
           </span>
         ) : (
           <span
@@ -36,12 +36,12 @@ const DropdownMobile = () => {
             : "-translate-y-[1500px] md:opacity-100 opacity-0 "
         }`}
       >
-        <ul className="mt-20 ml-5 flex flex-col -z-50">
+        <ul className="mt-20 ml-5 flex flex-col">
           {NAV_LINKS.map((link) => (
             <li
               onClick={() => setToggle(!toggle)}
               key={link.key}
-              className="text-3xl font-bold text-blu-50 pb-8 text-white"
+              className="text-3xl font-bold  pb-8 text-white"
             >
               <Link
                 href={link.href}
@@ -61,7 +61,7 @@ const DropdownMobile = () => {
             alt="image montre"
             className=" scale-100  hover:scale-125 transition-transform duration-500 ease-in-out"
           />
-          <p className="text-sm font-semibold text-white">Français</p>
+          <p className="text-sm font-semibold text-white">Anglais</p>
         </span>
       </div>
     </div>

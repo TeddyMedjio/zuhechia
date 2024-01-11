@@ -76,7 +76,7 @@ const Hero = () => {
       </section>
       <section className="h-screen w-full bg-center bg-cover flex flex-col space-y-5 justify-center items-center bg-heroTwo bg-fixed">
         <h3 className="uppercase text-xl md:text-2xl text-white">
-          Le choix de la vie
+          Montres femme
         </h3>
         <h1 className="font-heading text-6xl md:text-8xl text-white text-center">
           Zuhe Chia

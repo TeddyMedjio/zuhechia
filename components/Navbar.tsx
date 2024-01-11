@@ -56,7 +56,7 @@ const Navbar = () => {
           <Link href="#">
             <Image src="/search.svg" height={24} width={24} alt="search" />
           </Link>
-          <Link href="#">
+          <Link href="/auth/sign-in">
             <Image src="/profil.svg" height={24} width={24} alt="profil icon" />
           </Link>
           <Link href="#" className="relative">
