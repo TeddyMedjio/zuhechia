@@ -4,8 +4,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="overflow-hidden">
-      <section className="relative h-screen">
+    <div className="overflow-hidden ">
+      <section className="relative">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col space-y-5 justify-center items-center w-full z-30">
           <h3 className="uppercase text-xl md:text-2xl text-white">
             Oyster Perpetual
