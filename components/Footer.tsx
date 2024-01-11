@@ -92,7 +92,9 @@ const Footer = () => {
       </div>
       <div className="container mx-auto px-5 md:px-0">
         <div className="border-b-slate-500 border-[1px] mt-20"></div>
-        <p className="mt-5 text-sm text-slate-600 ">© 2024 Zuhe Chia.</p>
+        <p className="mt-5 text-sm text-slate-600 ">
+          © {new Date().getFullYear()} Zuhe Chia.
+        </p>
       </div>
     </div>
   );
