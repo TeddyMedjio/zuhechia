@@ -20,6 +20,7 @@ const config: Config = {
         heroThree: "url('/bg_compte.jpg')",
         heroFour: "url('/bg_sign.jpg')",
         heroFive: "url('/background.jpg')",
+        heroWatch: "url('/bg_watch.png')",
       },
       colors: {
         gold: "#C4AB7C",

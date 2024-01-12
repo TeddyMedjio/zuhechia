@@ -59,7 +59,7 @@ const Navbar = () => {
           <Link href="/auth/sign-in">
             <Image src="/profil.svg" height={24} width={24} alt="profil icon" />
           </Link>
-          <Link href="#" className="relative">
+          <Link href="/cart" className="relative">
             <span className="">
               <p className=" text-white font-semibold text-sm absolute -top-[7px] right-[4px] bg-gold px-1 rounded-full">
                 0

@@ -16,7 +16,7 @@ export const Logo = ({ width, height, variant = "white" }: Props) => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_134_255)">
+        <g clipPath="url(#clip0_134_255)">
           <path
             d="M31.7941 58.3102L29.3581 61.3164L26.922 58.3102H25.4896V64H26.765V60.0413L29.2921 63.0894H29.3581L31.8852 60.0413V64H33.2014V58.3102H31.7941Z"
             fill={variant}
