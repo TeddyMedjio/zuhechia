@@ -57,7 +57,7 @@ export default function RootLayout({
       <meta name="twitter:site" content="@zuhechia" />
       <body>
         <Navbar />
-        <main className="antiakiased bg-black">{children}</main>
+        <main className="antialiased bg-black">{children}</main>
         <Footer />
       </body>
     </html>
